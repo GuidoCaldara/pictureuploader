@@ -1,0 +1,11 @@
+{
+  "name": "pictureuploader",
+  "private": true,
+  "dependencies": {
+    "@rails/webpacker": "^4.0.7",
+    "cropperjs": "^1.5.4"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3.7.2"
+  }
+}

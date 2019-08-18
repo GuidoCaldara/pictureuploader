@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row my-4">
+    <div class="col-md-4">
+      <%= simple_form_for @photo do |f| %>
+      <%= f.input :pic %>
+      <%= f.input :pic_cache, as: :hidden %>
+      <input type="number" name="height" id="img-height" hidden="true">
+      <input type="number" name="width" id="img-width" hidden="true">
+      <input type="number" name="xOffset" id="xOffset" hidden="true">
+      <input type="number" name="yOffset" id="yOffset" hidden="true">
+      <%= f.submit %>
+      <% end %>
+    </div>
+  </div>
+  <div class="">
+    <img id="img-preview" width="400" alt="">
+  </div>
+</div>
+
+
+

@@ -1,0 +1,7 @@
+<div class="d-flex flex-wrap">
+  <% @photos.each do |photo| %>
+    <%= cl_image_tag(photo.pic, height:"300") %>
+  <% end %>
+  <br>
+</div>
+<%= link_to "Add a picture", new_photo_path %>
